@@ -193,6 +193,7 @@ main .container {
     }
     .footer form {
         margin: 3rem 0;
+        
     }
 
     .footer form div {
@@ -207,6 +208,7 @@ main .container {
         border-bottom: 1px solid gray;
         outline: none;
         font-size: 2rem;
+       
     } 
     .footer form div button {
         position: absolute;
@@ -246,7 +248,7 @@ main .container {
     }
     header .navigation {
         position: absolute;
-        z-index: 10;
+        z-index: 100;
         top: 5.1rem;
         background-color: #C0C0C0;
         width: 100%;
@@ -295,6 +297,13 @@ main .container {
     main .container div:first-child {
         justify-content: center;
         padding-right: 0;
+    }
+    .footer form div.active{
+       position: inherit !important;
+    }
+
+    .footer form div button.active{
+        display: none;
     }
     
 }
