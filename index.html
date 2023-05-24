@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalist Home</title>
     <link rel="stylesheet" href="main.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="root">
         <header>
             <a href="#" class="logo">logo</a>
-            <nav class="navigation">
+            <nav class="navigation" id="navigation">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">Home</a></li>
                     <li class="nav-item"><a href="#">men</a></li>
@@ -23,7 +24,7 @@
                     <li class="nav-item"><a href="#">blogs</a></li>
                 </ul>
             </nav>
-            <button class="btn-toggle">
+            <button class="btn-toggle" id="btn-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,16 +37,17 @@
                 <button>Shop now</button>
             </section>
             <section class="container">
-                <div><p>new arrivals</p></div>
-                <div><p>women collection</p></div>
-                <div><p>men collection</p></div>
+                <div><a href="#">new arrivals</a></div>
+                <div><a href="#">women collection</a></div>
+                <div><a href="#">men collection</a></div>
             </section>
         </main>
         <footer class="footer">
-            <h2 class="footer-header_text">newsletters</h2>
-            <p class="footer-text">Sign up to receive information about new products</p>
+            <h2>newsletters</h2>
+            <p>Sign up to receive information about new products</p>
             <form>
-                <div><input type="email" name="@" id="@" placeholder="Email address">
+            <div>
+                    <input type="email" name="@" id="@" placeholder="Email address">
                     <button class="form-btn">
                         <img src="./Assets/right-arrow-svgrepo-com.svg" aria-hidden="true">
                       </button>
