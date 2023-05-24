@@ -29,13 +29,6 @@ ul {
 }
 
 
-
-
-
-
-
-
-
 /* Custom Classes */
 /* Nav bar */
 header {
@@ -101,7 +94,8 @@ main .hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background-image: url('./Assets/Hero.jpg');
+    color: white;
 }
 
 .hero h1 {
@@ -116,12 +110,12 @@ main .hero {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 3.5rem;
-    color: rgb(134, 134, 134);
+    color: white;
 }
 .hero button {
     border: 1.5px solid rgb(134, 134, 134);
     padding: 1rem 2rem;
-    background-color: #dadada;
+    background-color: white;
     cursor: pointer;
 }
 .hero button:hover {
@@ -149,12 +143,26 @@ main .container {
     font-size: 2.3rem;
     justify-content: center;
     align-items: end;
+    background-image: url('./Assets/01.jpg');
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+}
+.container div:nth-child(2) {
+    background-image: url('./Assets/02.jpg');
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
 }
 
 .container div:first-child {
     justify-content: end;
     padding-right: 10rem;
     font-size: 3rem;
+    background-image: url('./Assets/new.jpg');
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
 }
 
 .container div a {
@@ -260,7 +268,7 @@ main .container {
         flex-direction: column;
         padding-top: 2rem;
         padding-left: 1rem;
-        
+        text-align: center;
     }
     .navigation .nav-list .nav-item:hover {
         border:none;
@@ -269,6 +277,11 @@ main .container {
 
     header .btn-toggle {
         display: flex;
+        transition: all ease-in-out 0.3s;
+    }
+    header .btn-toggle span {
+        
+        transition: all ease-in-out 0.3s;
     }
     header .btn-toggle.active span:nth-child(2) {
         transform: translateX(5px);
