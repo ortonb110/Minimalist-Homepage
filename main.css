@@ -14,6 +14,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 1.5rem;
     background-color: #ffff;
+    margin: 0;
 }
 
 a {
@@ -35,23 +36,24 @@ ul {
 
 
 /* Custom Classes */
-
+/* Nav bar */
 header {
     padding-inline: 8rem;
     display: flex;
     align-items: center;
-    
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .logo {
    padding: 0.1px 1.9rem;
-   background-color: #C0C0C0;
+   background-color: #dadada;
    font-size: 1.5rem;
    font-weight: bold;
 }
 
 .logo:hover {
-    background-color: #dad8d8;
+    background-color: #e9e9e9;
     transition: all ease-in-out 0.3s;
 }
 
@@ -65,7 +67,7 @@ header {
 .navigation .nav-list {
     display: flex;
     gap: 3rem;
-    padding-bottom: 1rem;
+    
 }
 
 .navigation .nav-list .nav-item:hover {
@@ -87,18 +89,81 @@ header .btn-toggle span {
     background-color: #000;
 }
 
+/* Hero Section */
+
+main .hero {
+    background-color: #dadada;
+    width: 100%;
+    height: 86rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    text-transform: capitalize;
+    width: 35rem;
+    text-align: center;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+    color: rgb(134, 134, 134);
+}
+.hero button {
+    border: 1.5px solid rgb(134, 134, 134);
+    padding: 1rem 2rem;
+    background-color: #dadada;
+    cursor: pointer;
+}
+.hero button:hover {
+    background-color: #e9e9e9;
+    transition: all ease-in-out 0.3s;
+}
+
+/* Container */
+
+main .container {
+    padding-inline: 8.5rem;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.container div {
+    background-color: #dadada;
+    height: 32rem;
+    padding: 2rem;
+    text-align: right;
+    text-transform: capitalize;
+    display: flex;
+    font-size: 2.3rem;
+    justify-content: center;
+    align-items: end;
+}
+
+.container div:first-child {
+    justify-content: end;
+    padding-right: 10rem;
+    font-size: 3rem;
+}
+
+.container div p {
+    padding: 1rem 1.5rem;
+    background-color: rgb(243, 243, 243);
+}
 
 
-
-
-
-
-
-
-
-
-
-
+/* Footer Section */
+    footer img {
+        width: 2rem;
+    }
 
 /* Mobile Display */
 
@@ -131,10 +196,24 @@ header .btn-toggle span {
         padding-left: 1rem;
         
     }
+    .navigation .nav-list .nav-item:hover {
+        border:none;
+        
+    }
 
     header .btn-toggle {
         display: flex;
     }
+
+    main .container {
+        grid-template-columns: 1fr;
+        padding-inline: 4rem;
+    }
+    main .container div:first-child {
+        justify-content: center;
+        padding-right: 0;
+    }
+    
 }
 
 
