@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Global Classes */
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    background-color: #ffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+/* Custom Classes */
+
+header {
+    padding-inline: 8rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+   padding: 0.1px 1.9rem;
+   background-color: #C0C0C0;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.logo:hover {
+    background-color: #dad8d8;
+    transition: all ease-in-out 0.3s;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navigation .nav-list {
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.navigation .nav-list .nav-item:hover {
+    border-bottom: 1.5px solid #000;
+    
+}
+header .btn-toggle {
+    flex-direction: column;
+    gap: 0.5rem;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: none;
+}
+
+header .btn-toggle span {
+    width: 2rem;
+    height: 1px;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Display */
+
+@media screen and (max-width: 800px) {
+
+    header {
+        justify-content: space-between;
+        padding-inline: 2rem;
+        margin-top: 2rem;
+        position: relative;
+    }
+    header .navigation {
+        position: absolute;
+        z-index: 10;
+        top: 2.5rem;
+        background-color: #C0C0C0;
+        width: 60vw;
+        height: 100vh;
+        left: -500px;
+        transition: all ease-in-out 0.3s;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 1px solid rgb(153, 151, 151);
+    }
+
+    header .navigation .nav-list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        
+    }
+
+    header .btn-toggle {
+        display: flex;
+    }
+}
+
+
+
+
