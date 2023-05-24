@@ -94,7 +94,7 @@ main .hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./Assets/Hero.jpg');
+    background-image: url('./Hero.jpg');
     color: white;
 }
 
@@ -143,13 +143,13 @@ main .container {
     font-size: 2.3rem;
     justify-content: center;
     align-items: end;
-    background-image: url('./Assets/01.jpg');
+    background-image: url('./01.jpg');
     object-fit: fill;
     background-size: cover;
     background-position: center;
 }
 .container div:nth-child(2) {
-    background-image: url('./Assets/02.jpg');
+    background-image: url('./02.jpg');
     object-fit: fill;
     background-size: cover;
     background-position: center;
@@ -159,7 +159,7 @@ main .container {
     justify-content: end;
     padding-right: 10rem;
     font-size: 3rem;
-    background-image: url('./Assets/new.jpg');
+    background-image: url('./new.jpg');
     object-fit: fill;
     background-size: cover;
     background-position: center;
